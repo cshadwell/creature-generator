@@ -3,6 +3,51 @@ import random
 import pandas as pd
 import io
 
+# Set the background image from Google Drive
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: url('https://drive.google.com/uc?export=view&id=1thjU2D8z6KLhNqtYeFHrr3WLEE3OeEfx') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .stButton>button {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+    }
+    .stButton>button:hover {
+        background-color: #f0f0f0;
+    }
+    .stDownloadButton>button {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+    }
+    .stDownloadButton>button:hover {
+        background-color: #f0f0f0;
+    }
+    h1 {
+        text-align: center;
+    }
+    .center-text {
+        text-align: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Categories and options
 categories = {
     "Body": ["Humanoid", "Reptilian", "Aquatic", "Insect-like", "Avian", "Feline", "Canine", "Plant-like", "Amorphous", "Mechanical"],
@@ -63,7 +108,7 @@ st.title("Fantasy Creature Generator")
 for category in categories.keys():
     col1, col2, col3 = st.columns([2, 3, 1])
     col1.write(f"**{category}:**")
-    col2.write(st.session_state.attributes[category])
+    col2.markdown(f"<p class='center-text'>{st.session_state.attributes[category]}</p>", unsafe_allow_html=True)
     if st.session_state.counters[category] > 0:
         if col3.button(f"Roll ({st.session_state.counters[category]} left)", key=category):
             randomize_category(category)
@@ -83,10 +128,13 @@ for i in range(5):
 
 st.markdown("---")
 
-# Randomize all button
+# Centered Randomize all button
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
 if st.button("Randomize All", key="randomize_all"):
     randomize_all()
+st.markdown("</div>", unsafe_allow_html=True)
 
-# Export button
+# Centered Export button
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
 st.download_button(label="Export Creature", data=export_creature(), file_name="fantasy_creature.txt", mime="text/plain")
-
+st.markdown("</div>", unsafe_allow_html=True)
