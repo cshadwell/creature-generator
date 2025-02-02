@@ -50,14 +50,14 @@ st.markdown(
 
 # Categories and options
 categories = {
-    "Body": ["Humanoid", "Reptilian", "Aquatic", "Insect-like", "Avian", "Feline", "Canine", "Plant-like", "Amorphous", "Mechanical"],
-    "Features": ["Wings", "Horns", "Tails", "Fins", "Antennae", "Tentacles", "Frills", "Claws", "Scales", "Extra arms"],
-    "Eyes": ["Single eye", "Multiple eyes", "Glowing eyes", "No eyes", "Large cartoon eyes", "Slitted eyes", "Compound eyes", "Hypnotic eyes", "Star-shaped pupils", "Floating eyes"],
+    "Body": ["Humanoid", "Ghostly", "Jellyfish-like", "Reptilian", "Aquatic", "Insect-like", "Avian", "Feline", "Canine", "Plant-like", "Blob", "Mechanical"],
+    "Features": ["Wings", "Horns", "Webbed Hands/Feet", "Tails", "Fins", "Antennae", "Tentacles", "Extra Legs", "Claws", "Scales", "Extra Arms"],
+    "Eyes": ["Single Eye", "Multiple Eyes", "Tired Eyes", "Sad Eyes", "Glowing eyes", "Beady Eyes", "Large Cartoon Eyes", "Slitted Eyes", "Compound Eyes", "Hypnotic Eyes", "Star-shaped Pupils", "Floating Eyes"],
     "Personality": ["Shy", "Aggressive", "Curious", "Playful", "Mischievous", "Protective", "Lazy", "Fearful", "Noble", "Hyperactive"],
-    "Habitat": ["Forest", "Desert", "Ocean", "Space", "Underground", "Mountains", "Sky", "Swamp", "Arctic", "Urban"],
-    "Physical Trait": ["Spiky", "Smooth", "Furry", "Scaly", "Feathery", "Transparent", "Covered in moss", "Crystalline", "Slimy", "Metallic"],
-    "Accessories": ["Crown", "Armor", "Jewelry", "Gadgets", "Backpack", "Mask", "Cape", "Tools", "Instrument", "Bubbles"],
-    "Special Powers": ["Flight", "Invisibility", "Shape-shifting", "Fire-breathing", "Water manipulation", "Lightning", "Super strength", "Hypnotism", "Healing", "Time control"]
+    "Habitat": ["Forest", "Volcano", "Desert", "Ocean", "Space", "Underground", "Mountains", "Sky", "Swamp", "Arctic", "Urban"],
+    "Physical Trait": ["Spiky", "Smooth", "Furry", "Scaly", "Feathery", "Rocky", "Covered in Moss", "Crystalline", "Slimy", "Metallic"],
+    "Accessories": ["Crown", "Armor", "Tatoos", "Jewelry", "Gadgets", "Backpack", "Mask", "Cape", "Tools", "Instrument", "Bubbles"],
+    "Special Powers": ["Flight", "Super Speed", "Acid Spit", "Telekenesis", "Fire-breathing", "Water manipulation", "Lightning", "Super strength", "Hypnotism", "Healing", "Time control"]
 }
 
 # Generate random colors
